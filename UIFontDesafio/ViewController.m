@@ -19,7 +19,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,5 +33,11 @@
 
 - (IBAction)alterarNome:(id)sender {
     display.text = nomeInput.text;
+    [nomeInput resignFirstResponder];
 }
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    [nomeInput resignFirstResponder];
+}
+
 @end
