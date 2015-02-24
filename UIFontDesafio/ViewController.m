@@ -14,6 +14,9 @@
 
 @implementation ViewController
 
+@synthesize display;
+@synthesize nomeInput;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -24,4 +27,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)escolheFonte:(id)sender {
+    [display setFont:[UIFont fontWithName:[sender currentTitle] size:14]];
+}
+
+- (IBAction)alterarNome:(id)sender {
+    display.text = nomeInput.text;
+}
 @end

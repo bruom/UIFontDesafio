@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *display;
+@property (weak, nonatomic) IBOutlet UITextField *nomeInput;
 
+- (IBAction)escolheFonte:(id)sender;
+
+
+- (IBAction)alterarNome:(id)sender;
 
 @end
 
